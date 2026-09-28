@@ -10,7 +10,7 @@ Suppose $T(n)$ is the worst case running time of an algorithm with input size $n
 
 1. $T(n)$ is $\mathcal{O}(n^2)$.
 
-Could be either true or false, because (T(n)) could be $n^2#, which is $\mathcal{O}(n^2)$, but it could also be $n^3$, which is not $\mathcal{O}(n^2)$.
+Could be either true or false, because (T(n)) could be $n^2$, which is $\mathcal{O}(n^2)$, but it could also be $n^3$, which is not $\mathcal{O}(n^2)$.
 
 2. $T(n)$ is $\Theta(n^3)$.
 
