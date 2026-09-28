@@ -9,7 +9,7 @@ This lab focuses on understanding and analyzing the asymptotic behavior of algor
 Suppose $T(n)$ is the worst case running time of an algorithm with input size $n$, and we know that $T(n)$ is $\mathcal{O}(n^3)$ and $\Omega(n^2)$. For each of the following statements, determine whether it must be true, must be false, or could be either true or false. Give a brief justification for each.
 
 1. $T(n)$ is $\mathcal{O}(n^2)$.
-   could be either true or false, because (T(n)) could be (n^2), which is (\mathcal{O}(n^2)), but it could also be (n^3), which is not (\mathcal{O}(n^2)).
+   could be either true or false, because (T(n)) could be (n^2), which is $\mathcal{O}(n^2)$, but it could also be (n^3), which is not $\mathcal{O}(n^2)$.
 
 2. $T(n)$ is $\Theta(n^3)$.
 3. $T(n)$ is $\Omega(n)$.
