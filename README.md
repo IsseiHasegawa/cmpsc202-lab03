@@ -10,13 +10,27 @@ Suppose $T(n)$ is the worst case running time of an algorithm with input size $n
 
 1. $T(n)$ is $\mathcal{O}(n^2)$.
 
-   could be either true or false, because (T(n)) could be (n^2), which is $\mathcal{O}(n^2)$, but it could also be (n^3), which is not $\mathcal{O}(n^2)$.
+Could be either true or false, because (T(n)) could be (n^2), which is $\mathcal{O}(n^2)$, but it could also be (n^3), which is not $\mathcal{O}(n^2)$.
 
 2. $T(n)$ is $\Theta(n^3)$.
+
+Could be either true or false, because $T(n)$ could be $n^3$, but it could also be $n^2$ or another function between $n^2$ and $n^3$.
+
 3. $T(n)$ is $\Omega(n)$.
+
+Must be true, because $T(n)$ is already known to be $\Omega(n^2)$. Since $n^2$ grows faster than $n$, $T(n)$ must also be $\Omega(n)$.
+
 4. $T(n)$ is $\Theta(n^{1.5})$.
+
+Must be false, because $n^{1.5}$ grows more slowly than $n^2$. This would contradict the fact that $T(n)$ is $\Omega(n^2)$.
+
 5. $T(n)$ is $\mathcal{O}(n)$.
+
+Must be false, because a function that is $\Omega(n^2)$ cannot also have an asymptotic upper bound of $\mathcal{O}(n)$.
+
 6. $T(n)$ is $\Theta(n^2 \log n)$.
+
+Could be either true or false, because $n^2 \log n$ grows faster than $n^2$ but slower than $n^3$. Therefore, it satisfies the given bounds, but $T(n)$ could also be another function such as $n^2$ or $n^3$.
 
 ## Problem 2
 
