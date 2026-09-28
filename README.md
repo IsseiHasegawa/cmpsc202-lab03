@@ -10,7 +10,7 @@ Suppose $T(n)$ is the worst case running time of an algorithm with input size $n
 
 1. $T(n)$ is $\mathcal{O}(n^2)$.
 
-Could be either true or false, because (T(n)) could be (n^2), which is $\mathcal{O}(n^2)$, but it could also be (n^3), which is not $\mathcal{O}(n^2)$.
+Could be either true or false, because (T(n)) could be $n^2#, which is $\mathcal{O}(n^2)$, but it could also be $n^3$, which is not $\mathcal{O}(n^2)$.
 
 2. $T(n)$ is $\Theta(n^3)$.
 
@@ -48,3 +48,15 @@ Output: int sum
 ```
 
 Without knowing anything about $f$, what can we say about the running time of the Mystery Algorithm in terms of $n$? Justify your answer.
+
+The nested loops each run $n$ times, so the function $f(A,i,j)$ is called $n \times n = n^2$ times.
+
+Without knowing the running time of $f$, we cannot give an exact upper bound for the entire Mystery Algorithm. However, the loops themselves require at least $\Omega(n^2)$ time because there are $n^2$ iterations.
+
+If the running time of one call to $f$ is $F(n)$, then the total running time is $\Theta(n^2 F(n) + n^2)$.
+
+If $f$ takes at least constant time, this can be written as $\Theta(n^2 F(n))$.
+
+For example, if $f$ is $\Theta(1)$, the Mystery Algorithm is $\Theta(n^2)$. If $f$ is $\Theta(n)$, the Mystery Algorithm is $\Theta(n^3)$.
+
+Therefore, without knowing anything about $f$, the strongest general statement is that the algorithm performs $n^2$ calls to $f$ and takes at least $\Omega(n^2)$ time, but we cannot determine a tighter upper bound.
